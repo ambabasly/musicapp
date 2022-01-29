@@ -1,0 +1,20 @@
+.x-loader {
+  padding-right: 4rem;
+  padding-bottom: 30%;
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+@mixin mobile() {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@import "../pages/homepage/homepage.scss";
+@import "../components/songlist/songlist.scss";
