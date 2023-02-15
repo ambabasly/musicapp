@@ -1,0 +1,38 @@
+.songlist {
+  display: flex;
+  margin-bottom: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  transition: all ease-in-out 0.9s;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+
+  &.current {
+    background: lightgrey;
+  }
+
+  .img-holder {
+    padding-right: 1rem;
+    width: 5rem;
+    img {
+      height: 4rem;
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+  .song-details {
+    flex-grow: 1;
+    p {
+      margin-bottom: 0.1em;
+    }
+    .title {
+      font-weight: 900;
+    }
+  }
+  .play-or-pause {
+    .action-icon {
+      font-size: 30px;
+      cursor: pointer;
+    }
+  }
+}
