@@ -1,7 +1,13 @@
 import React from "react";
 import { PlayCircleOutlined, PauseCircleOutlined } from "@ant-design/icons";
 
-const Songlist = ({ music, currentSongId, chooseSong, index, playing }) => {
+export const Songlist = ({
+  music,
+  currentSongId,
+  chooseSong,
+  index,
+  playing,
+}) => {
   return (
     <div
       className={`songlist ${currentSongId === music.id ? "current" : ""}`}
@@ -30,5 +36,3 @@ const Songlist = ({ music, currentSongId, chooseSong, index, playing }) => {
     </div>
   );
 };
-
-export default Songlist;

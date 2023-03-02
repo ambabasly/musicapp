@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import axios from "axios";
-import Songlist from "../../components/songlist/songlist";
+import {Songlist} from "../../components/songlist/songlist";
 import { Tag, message } from "antd";
 import {
   LikeOutlined,
@@ -12,7 +12,7 @@ import {
 } from "@ant-design/icons";
 import { formatTiming } from "../../utils";
 
-const Homepage = () => {
+export const Homepage = () => {
   const [musicList, setMusicList] = useState([]);
   const [playing, setPlaying] = useState(false);
   const [currentSong, setCurrentSong] = useState(null);
@@ -241,5 +241,3 @@ const Homepage = () => {
     </div>
   );
 };
-
-export default Homepage;

@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import Homepage from "./pages/homepage/homepage";
+import {Homepage} from "./pages/homepage/homepage";
 
-function App() {
+export function App() {
   return (
     <Routes>
       {/* this handels the index route */}
@@ -11,5 +11,3 @@ function App() {
     </Routes>
   );
 }
-
-export default App;
